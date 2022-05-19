@@ -1,0 +1,16 @@
+const postsBlock = document.querySelector('.posts') as HTMLDListElement
+const postSection = document.querySelector('.posts-block') as HTMLDivElement
+const detailSection = document.querySelector('.detail-block') as HTMLDivElement
+const detailBannerImg = document.querySelector('.banner--img img') as HTMLImageElement
+const detailBannerTitle = document.querySelector('.banner--title') as HTMLTitleElement
+const detailPostTextarea = document.querySelector('#post-textarea') as HTMLTextAreaElement
+const detailEditButton = document.querySelector('.description--rewrite') as HTMLButtonElement
+const detailEditedTextSaveBlock = document.querySelector('.description--btn-block') as HTMLDListElement
+const detailEditedTextSaveButton = document.querySelector('.save-btn') as HTMLButtonElement
+const detailEditedTextCencelButton = document.querySelector('.remove-btn') as HTMLButtonElement
+const homePageLink = document.querySelector('.posts-link') as HTMLButtonElement
+const commentsList = document.querySelector('.comments-list') as HTMLUListElement
+const PGpreviousBtn = document.querySelector('.previous-btn') as HTMLButtonElement
+const PGnextBtn = document.querySelector('.next-btn') as HTMLButtonElement
+const PGsomeCountBtns = document.querySelector('#someCountBtns') as HTMLDivElement
+const PGCountBtnsBlock = document.querySelector('.pagination-counts-block') as HTMLDivElement

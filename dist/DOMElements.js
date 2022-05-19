@@ -1,0 +1,17 @@
+"use strict";
+const postsBlock = document.querySelector('.posts');
+const postSection = document.querySelector('.posts-block');
+const detailSection = document.querySelector('.detail-block');
+const detailBannerImg = document.querySelector('.banner--img img');
+const detailBannerTitle = document.querySelector('.banner--title');
+const detailPostTextarea = document.querySelector('#post-textarea');
+const detailEditButton = document.querySelector('.description--rewrite');
+const detailEditedTextSaveBlock = document.querySelector('.description--btn-block');
+const detailEditedTextSaveButton = document.querySelector('.save-btn');
+const detailEditedTextCencelButton = document.querySelector('.remove-btn');
+const homePageLink = document.querySelector('.posts-link');
+const commentsList = document.querySelector('.comments-list');
+const PGpreviousBtn = document.querySelector('.previous-btn');
+const PGnextBtn = document.querySelector('.next-btn');
+const PGsomeCountBtns = document.querySelector('#someCountBtns');
+const PGCountBtnsBlock = document.querySelector('.pagination-counts-block');

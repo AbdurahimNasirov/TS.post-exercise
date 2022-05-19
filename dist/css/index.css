@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.active {
+  display: block !important;
+}
+
+.container {
+  max-width: 1040px;
+  width: 100%;
+  padding: 0 -15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.button {
+  border: none;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.button-primary {
+  color: #FF008A;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.22;
+  padding: 13px 0;
+  min-width: 300px;
+  cursor: pointer;
+  font-weight: 300;
+  background: none;
+  outline: none;
+  border: 1px solid #FF008A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.input:focus {
+  border: none;
+  outline: none;
+}
+
+header {
+  padding: 20px 0;
+}
+
+.logo {
+  font-weight: 500;
+  flex: 1;
+}
+
+.search {
+  position: relative;
+  margin-right: 50px;
+}
+.search-icon {
+  position: absolute;
+  top: 16px;
+  left: 7px;
+}
+.search-input {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-weight: 300;
+  padding: 14px 10px 12px 35px;
+  font-size: 18px;
+}
+
+.posts-link {
+  display: flex;
+  gap: 5px;
+  color: #FF008A;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.posts-block {
+  display: none;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.posts a {
+  max-width: 310px;
+  min-width: 250px;
+  border-radius: 20px;
+  border: 1px solid #e2e2e2;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.posts a .post-item {
+  width: 100%;
+}
+.posts a .post-item--img {
+  background: #d1d1d6;
+  border-radius: 15px;
+  height: 230px;
+  overflow: hidden;
+  width: 100%;
+}
+.posts a .post-item--img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.posts a .post-item--content {
+  margin: 20px 0;
+}
+.posts a .post-item--content-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+.posts a .post-item--content-comment {
+  margin-top: 10px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.posts a .post-item--footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.posts a .post-item--footer-comment {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 10px;
+}
+.posts a .post-item--footer-comment--count {
+  width: 50px;
+  margin-left: auto;
+  margin-bottom: 1px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+}
+
+.detail-block {
+  display: none;
+}
+.detail-block .banner {
+  width: 100%;
+}
+.detail-block .banner--img {
+  margin-bottom: 25px;
+  background: #E2E2E2;
+  height: 280px;
+}
+.detail-block .banner--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.detail-block .banner--title {
+  font-size: 32px;
+  font-weight: 500;
+}
+.detail-block .divide {
+  margin: 30px 0;
+  width: 100%;
+  height: 1px;
+  background: #D1D1D6;
+}
+.detail-block .description {
+  margin-bottom: 30px;
+}
+.detail-block .description textarea {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  padding-bottom: 35px;
+  margin-bottom: 30px;
+  color: #000;
+  border-radius: 10px;
+  border: 1px solid #D1D1D6;
+  background: none;
+  height: 180px;
+  width: 100%;
+  resize: none;
+}
+.detail-block .description textarea::-webkit-scrollbar {
+  width: 1px;
+}
+.detail-block .description textarea:focus-visible {
+  outline: none;
+}
+.detail-block .description textarea:disabled {
+  resize: none;
+  color: rgba(60, 60, 67, 0.6);
+  padding: 0;
+  cursor: default;
+  border: none;
+}
+.detail-block .description--rewrite {
+  cursor: pointer;
+  color: #FF008A;
+  font-size: 16px;
+  display: none;
+  gap: 20px;
+}
+.detail-block .description--rewrite svg {
+  margin-bottom: -2px;
+  margin-right: 20px;
+}
+.detail-block .description--btn-block {
+  display: none;
+  gap: 20px;
+}
+.detail-block .description--btn-block .save-btn {
+  background: #FF008A;
+  color: white;
+}
+.detail-block .comments h3 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+.detail-block .comments-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+.detail-block .comments-item--left-block {
+  padding-right: 8px;
+}
+.detail-block .comments-item--right-block--user .user-email {
+  font-size: 14px;
+  color: rgba(60, 60, 67, 0.6);
+  display: block;
+  margin-bottom: 10px;
+}
+.detail-block .comments-item--right-block--content {
+  color: rgba(60, 60, 67, 0.6);
+}
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  border-top: 1px solid #D1D1D6;
+}
+footer .footer-wrapper {
+  padding: 30px 0 40px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.pagination-counts-block {
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */
