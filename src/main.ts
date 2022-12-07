@@ -1,4 +1,3 @@
-this.location.hash = 'page=1';
 let lengthPaginate
 (async function basicFunction() {
   try {
